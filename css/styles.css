@@ -146,6 +146,44 @@ h1 {
   color: white;
   background-color: var(--brand-color);
 }
+.backdrop {
+  background-color: #00000033;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
+  pointer-events: all;
+  display: none;
+}
+.modal {
+  background-color: var(--color-white);
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  z-index: 2;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+.close {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  background-color: var(--color-white);
+}
+.x {
+  width: 18px;
+  height: 18px;
+}
 .one {
   margin-top: 95px;
 }
@@ -260,7 +298,7 @@ h1 {
 .address {
   color: white;
 }
-.list > li > h3 {
+.list_title {
   text-align: left;
   letter-spacing: 0.16em;
   font-weight: 700;
@@ -268,7 +306,7 @@ h1 {
   padding-top: 20px;
   padding-left: 24px;
 }
-.list > li > p {
+.list_text {
   color: var(--letter-color);
   text-align: left;
   letter-spacing: 0.03em;
@@ -285,6 +323,34 @@ h1 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.link_box_text > p {
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: 400;
+  padding: 63px 24px;
+}
+.link_box {
+  position: relative;
+  overflow: hidden;
+}
+.link_box_text {
+  width: 368px;
+  height: 294px;
+  position: absolute;
+  transition-property: transform;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(100%);
+  background-color: var(--brand-color);
+  transition-duration: 250ms;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+}
+.list_proyect:hover .link_box_text {
+  transform: translateY(0);
+}
 .active {
   color: var(--brand-color);
 }
@@ -296,6 +362,7 @@ h1 {
   height: 5px;
   left: 0;
   bottom: -30px;
+  border-radius: 2px;
 }
 .clase .menu {
   position: relative;
