@@ -336,8 +336,8 @@ h1 {
   overflow: hidden;
 }
 .link_box_text {
-  width: 368px;
-  height: 294px;
+  width: 370px;
+  height: 300px;
   position: absolute;
   transition-property: transform;
   margin-left: auto;
