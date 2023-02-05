@@ -18,6 +18,23 @@
     />
   </head>
   <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minus
+          non odit accusantium minima eligendi itaque aliquam! Libero ex quia
+          consequatur consectetur laborum inventore quae officiis blanditiis,
+          numquam nobis fugit
+        </p>
+        <button class="close" data-modal-close>
+          <span class="x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
     <header class="header">
       <div class="container header">
         <nav class="box">
@@ -61,19 +78,6 @@
         <button class="button init" type="button" data-modal-open>
           Solicite nuestro servicio
         </button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-              minus non odit accusantium minima eligendi itaque aliquam! Libero
-              ex quia consequatur consectetur laborum inventore quae officiis
-              blanditiis, numquam nobis fugit!
-            </p>
-            <button class="botton close" data-modal-close>
-              <span class="x">x </span>
-            </button>
-          </div>
-        </div>
       </section>
       <section class="container one">
         <ul class="description">
