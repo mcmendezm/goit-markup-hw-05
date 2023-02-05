@@ -82,7 +82,8 @@ a {
   fill: var(--letter-color);
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact > a > svg {
   display: flex;
@@ -137,7 +138,8 @@ h1 {
   border-radius: 4px;
   font-family: roboto, sans-serif;
   padding: 6px 17px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .init {
   background-color: var(--brand-color);
@@ -182,7 +184,8 @@ h1 {
   border-radius: 50%;
   background-color: #ffffff;
   margin: 10px 8px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .x {
   display: flex;
@@ -328,7 +331,7 @@ h1 {
 .list > li {
   cursor: pointer;
   border: 1px solid #eeeeee;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list > li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -452,14 +455,15 @@ h1 {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .redes-f > a > svg {
   fill: currentColor;
 }
 .redes-f:hover {
   background-color: var(--brand-color);
-  border-radius: 50%;
   color: var(--color-white);
 }
 .grupo {
@@ -476,14 +480,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .redes-footer > a > svg {
   fill: currentColor;
 }
 .redes-footer:hover {
   background-color: var(--brand-color);
-  border-radius: 50%;
   color: white;
 }
 .foote > h3 {
@@ -511,7 +515,8 @@ h1 {
   padding: 14px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clientes > a > svg:hover {
   border: 1px solid var(--brand-color);
@@ -525,4 +530,37 @@ h1 {
   padding-top: 58px;
   padding-bottom: 44px;
   font-size: 36px;
+}
+
+/*tarea 6*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.167;
+  width: 448px;
+  color: var(--letter-color);
+}
+.form_title {
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  padding-top: 40px;
+}
+.form_button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  color: var(--color-white);
 }
